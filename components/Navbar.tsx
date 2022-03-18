@@ -1,4 +1,4 @@
-import { HStack, useBreakpointValue } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import { FunctionComponent, useState } from "react";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";

@@ -51,6 +51,15 @@ const components = {
         fontSize: "2.5rem",
         fontWeight: "500",
       },
+      xl: {
+        fontWeight: "500",
+      },
+      lg: {
+        fontWeight: "500",
+      },
+      md: {
+        fontWeight: "500",
+      },
       sm: {
         fontWeight: "500",
       },
@@ -82,9 +91,9 @@ const styles = {
       color: "primary",
       mb: "3rem",
     },
-    section: {
-      h: "100vh",
-    },
+    // section: {
+    //   h: "100vh",
+    // },
     a: {
       color: "primary",
       transition: "all 400ms ease",

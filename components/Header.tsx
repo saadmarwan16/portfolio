@@ -3,8 +3,11 @@ import { Box, Button, Heading, Hide, HStack, VStack } from "@chakra-ui/react";
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 import { SiUpwork } from "react-icons/si";
 import Image from "next/image";
+import { useMainWidth } from "../lib/hooks";
 
 const Header: FunctionComponent = () => {
+  const mainWidth = useMainWidth();
+
   return (
     <Box
       as="header"
@@ -16,7 +19,7 @@ const Header: FunctionComponent = () => {
         textAlign="center"
         position="relative"
         h="full"
-        w={{ base: "90%", md: "86%", lg: "75%" }}
+        w={mainWidth}
         marginX="auto"
       >
         <VStack gap={2}>
@@ -80,10 +83,10 @@ const Header: FunctionComponent = () => {
         </Hide>
         <Box
           bgGradient="linear(to-b, primary, transparent)"
-          width="22rem"
+          width={{ base: "16rem", sm: "22rem" }}
           height="30rem"
           position="absolute"
-          left="calc(50% - 11rem)"
+          left={{base: "calc(50% - 8rem)", sm: "calc(50% - 11rem)"}}
           mt="4rem"
           borderTopRadius="12rem"
           overflow="hidden"
