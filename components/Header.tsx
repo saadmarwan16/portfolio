@@ -3,10 +3,11 @@ import { Box, Button, Heading, Hide, HStack, VStack } from "@chakra-ui/react";
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 import { SiUpwork } from "react-icons/si";
 import Image from "next/image";
-import { useMainWidth } from "../lib/hooks";
+import { useHeadingSize, useMainWidth } from "../lib/hooks";
 
 const Header: FunctionComponent = () => {
   const mainWidth = useMainWidth();
+  const headingSize = useHeadingSize();
 
   return (
     <Box
@@ -22,11 +23,11 @@ const Header: FunctionComponent = () => {
         w={mainWidth}
         marginX="auto"
       >
-        <VStack gap={2}>
+        <VStack gap={{ base: 0, sm: 2 }}>
           <Heading as="h5" size="sm">
             Hello, I&apos;m
           </Heading>
-          <Heading as="h1" size="2xl">
+          <Heading as="h1" size={headingSize}>
             Marwan Sa-ad
           </Heading>
           <Heading as="h5" size="sm" color="light">
@@ -34,8 +35,12 @@ const Header: FunctionComponent = () => {
           </Heading>
         </VStack>
         <HStack justifyContent="center" gap="1.2rem" mt="2.5rem">
-          <Button variant="secondary">About me</Button>
-          <Button variant="primary">Let&apos;s talk</Button>
+          <a href="#about">
+            <Button variant="secondary">About me</Button>
+          </a>
+          <a href="#contact">
+            <Button variant="primary">Let&apos;s talk</Button>
+          </a>
         </HStack>
         <Hide below="sm">
           <VStack
@@ -86,13 +91,12 @@ const Header: FunctionComponent = () => {
           width={{ base: "16rem", sm: "22rem" }}
           height="30rem"
           position="absolute"
-          left={{base: "calc(50% - 8rem)", sm: "calc(50% - 11rem)"}}
+          left={{ base: "calc(50% - 8rem)", sm: "calc(50% - 11rem)" }}
           mt="4rem"
           borderTopRadius="12rem"
           overflow="hidden"
-          p="40rem 0 0 0"
         >
-          <Image src="/me.png" alt="me" layout="fill" />
+          <Image src="/me.jpg" alt="me" layout="fill" priority />
         </Box>
         <Hide below="sm">
           <Box
@@ -103,7 +107,7 @@ const Header: FunctionComponent = () => {
             fontWeight="300"
             fontSize="0.9rem"
           >
-            <a>Scroll Down</a>
+            <a href="#footer">Scroll Down</a>
           </Box>
         </Hide>
       </Box>

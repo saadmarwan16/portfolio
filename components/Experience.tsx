@@ -21,9 +21,9 @@ const Experience: FunctionComponent = () => {
         gap={{ base: "1rem", lg: "2rem" }}
         sx={{
           "> div": {
-            width: { base: "100%", md: "80%", lg: '100%' },
+            width: { base: "100%", md: "80%", lg: "100%" },
             bg: "backgroundVariant",
-            padding: { base: "2rem 1rem", md: "2rem", lg: "2.4rem 3rem" },
+            padding: { base: "2rem 0.25rem", md: "2rem", lg: "2.4rem 3rem" },
             margin: { md: "0 auto" },
             borderRadius: "2rem",
             border: "1px solid transparent",
@@ -46,7 +46,7 @@ const Experience: FunctionComponent = () => {
           },
           ".experience-details": {
             display: "flex",
-            gap: "1rem",
+            gap: {base: "0.5rem", sm: "1rem"},
           },
         }}
       >
@@ -84,29 +84,7 @@ const Experience: FunctionComponent = () => {
                   JavaScript
                 </Heading>
                 <Box as="small" color="light">
-                  Experienced
-                </Box>
-              </Box>
-            </Box>
-            <Box as="article" className="experience-details">
-              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
-              <Box>
-                <Heading as="h4" size="md">
-                  Bootstrap
-                </Heading>
-                <Box as="small" color="light">
-                  Experienced
-                </Box>
-              </Box>
-            </Box>
-            <Box as="article" className="experience-details">
-              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
-              <Box>
-                <Heading as="h4" size="md">
-                  Tailwind
-                </Heading>
-                <Box as="small" color="light">
-                  Experienced
+                  Intermediate
                 </Box>
               </Box>
             </Box>
@@ -121,6 +99,39 @@ const Experience: FunctionComponent = () => {
                 </Box>
               </Box>
             </Box>
+            <Box as="article" className="experience-details">
+              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
+              <Box>
+                <Heading as="h4" size="md">
+                  Tailwind
+                </Heading>
+                <Box as="small" color="light">
+                  Intermediate
+                </Box>
+              </Box>
+            </Box>
+            <Box as="article" className="experience-details">
+              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
+              <Box>
+                <Heading as="h4" size="md">
+                  Flutter
+                </Heading>
+                <Box as="small" color="light">
+                  Intermediate
+                </Box>
+              </Box>
+            </Box>
+            <Box as="article" className="experience-details">
+              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
+              <Box>
+                <Heading as="h4" size="md">
+                  Next.js
+                </Heading>
+                <Box as="small" color="light">
+                  Intermediate
+                </Box>
+              </Box>
+            </Box>
           </Box>
         </Box>
         <Box>
@@ -132,54 +143,32 @@ const Experience: FunctionComponent = () => {
               <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
               <Box>
                 <Heading as="h4" size="md">
-                  Node JS
-                </Heading>
-                <Box as="small" color="light">
-                  Experienced
-                </Box>
-              </Box>
-            </Box>
-            <Box as="article" className="experience-details">
-              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
-              <Box>
-                <Heading as="h4" size="md">
-                  MongoDB
-                </Heading>
-                <Box as="small" color="light">
-                  Intermediate
-                </Box>
-              </Box>
-            </Box>
-            <Box as="article" className="experience-details">
-              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
-              <Box>
-                <Heading as="h4" size="md">
-                  PHP
-                </Heading>
-                <Box as="small" color="light">
-                  Intermediate
-                </Box>
-              </Box>
-            </Box>
-            <Box as="article" className="experience-details">
-              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
-              <Box>
-                <Heading as="h4" size="md">
-                  MySQL
-                </Heading>
-                <Box as="small" color="light">
-                  Basic
-                </Box>
-              </Box>
-            </Box>
-            <Box as="article" className="experience-details">
-              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
-              <Box>
-                <Heading as="h4" size="md">
                   Python
                 </Heading>
                 <Box as="small" color="light">
+                  Intermediate
+                </Box>
+              </Box>
+            </Box>
+            <Box as="article" className="experience-details">
+              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
+              <Box>
+                <Heading as="h4" size="md">
+                  Firebase
+                </Heading>
+                <Box as="small" color="light">
                   Experienced
+                </Box>
+              </Box>
+            </Box>
+            <Box as="article" className="experience-details">
+              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
+              <Box>
+                <Heading as="h4" size="md">
+                  Flask
+                </Heading>
+                <Box as="small" color="light">
+                  Intermediate
                 </Box>
               </Box>
             </Box>
@@ -190,7 +179,40 @@ const Experience: FunctionComponent = () => {
                   PostgreSQL
                 </Heading>
                 <Box as="small" color="light">
+                  Basic
+                </Box>
+              </Box>
+            </Box>
+            <Box as="article" className="experience-details">
+              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
+              <Box>
+                <Heading as="h4" size="md">
+                  Django
+                </Heading>
+                <Box as="small" color="light">
                   Intermediate
+                </Box>
+              </Box>
+            </Box>
+            <Box as="article" className="experience-details">
+              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
+              <Box>
+                <Heading as="h4" size="md">
+                  MongoDB
+                </Heading>
+                <Box as="small" color="light">
+                  Basic
+                </Box>
+              </Box>
+            </Box>
+            <Box as="article" className="experience-details">
+              <Icon as={BsPatchCheckFill} mt="6px" color="primary" />
+              <Box>
+                <Heading as="h4" size="md">
+                  Docker
+                </Heading>
+                <Box as="small" color="light">
+                  Basic
                 </Box>
               </Box>
             </Box>
