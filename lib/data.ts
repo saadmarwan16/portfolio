@@ -1,18 +1,18 @@
 export const projects = [
   {
-    image: "/portfolio1.jpg",
+    image: "/portfolio.png",
     title: "Portfolio",
     github: "https://github.com/saadmarwan16/portfolio",
     demo: "/",
   },
   {
-    image: "/portfolio2.jpg",
+    image: "/passwordio.png",
     title: "Passwordio",
     github: "https://github.com/saadmarwan16/passwordio",
     demo: "https://loving-wescoff-2d4891.netlify.app/",
   },
   {
-    image: "/portfolio3.jpg",
+    image: "/calculatezen.png",
     title: "Calculatezen",
     github: "https://github.com/saadmarwan16/calculatezen",
     demo: "https://vigilant-curie-e0f7e7.netlify.app/",
@@ -21,27 +21,9 @@ export const projects = [
 
 export const testimonials = [
   {
-    avatar: "/avatar1.jpg",
-    name: "Ernest Achiever",
+    avatar: "/abdul-rahman.jpg",
+    name: "Abdul Rahman Sa-ad",
     review:
-      "Non velit aute culpa excepteur consequat labore non veniam. Minim ad ipsum aliqua qui cupidatat. Lorem et laborum ex reprehenderit id quis cupidatat proident nisi fugiat est fugiat irure ea. Do voluptate reprehenderit sint magna ea. Consequat in mollit reprehenderit incididunt dolor veniam est incididunt ad qui. Nulla commodo mollit id esse enim eiusmod sunt culpa commodo dolor ullamco do in.",
-  },
-  {
-    avatar: "/avatar1.jpg",
-    name: "Ernest Achiever",
-    review:
-      "Non velit aute culpa excepteur consequat labore non veniam. Minim ad ipsum aliqua qui cupidatat. Lorem et laborum ex reprehenderit id quis cupidatat proident nisi fugiat est fugiat irure ea. Do voluptate reprehenderit sint magna ea. Consequat in mollit reprehenderit incididunt dolor veniam est incididunt ad qui. Nulla commodo mollit id esse enim eiusmod sunt culpa commodo dolor ullamco do in.",
-  },
-  {
-    avatar: "/avatar1.jpg",
-    name: "Ernest Achiever",
-    review:
-      "Non velit aute culpa excepteur consequat labore non veniam. Minim ad ipsum aliqua qui cupidatat. Lorem et laborum ex reprehenderit id quis cupidatat proident nisi fugiat est fugiat irure ea. Do voluptate reprehenderit sint magna ea. Consequat in mollit reprehenderit incididunt dolor veniam est incididunt ad qui. Nulla commodo mollit id esse enim eiusmod sunt culpa commodo dolor ullamco do in.",
-  },
-  {
-    avatar: "/avatar1.jpg",
-    name: "Ernest Achiever",
-    review:
-      "Non velit aute culpa excepteur consequat labore non veniam. Minim ad ipsum aliqua qui cupidatat. Lorem et laborum ex reprehenderit id quis cupidatat proident nisi fugiat est fugiat irure ea. Do voluptate reprehenderit sint magna ea. Consequat in mollit reprehenderit incididunt dolor veniam est incididunt ad qui. Nulla commodo mollit id esse enim eiusmod sunt culpa commodo dolor ullamco do in.",
+      "Efficient service. Seamless process from start to finish. It is a distinct pleasure for me to recommend Sa-ad Marwan to any and all interested parties. He was very professional, comprehensive and competent throughout the process of our working together to build my Business Website. I feel that I have established a relationship with him for years to come. Would recommend 👍🏾",
   },
 ];

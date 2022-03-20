@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 const Testimonials: FunctionComponent = () => {
   return (
-    <Box as="section" id="testimonials">
+    <Box as="section" id="testimonials" pt="7rem">
       <Heading as="h5" size="sm">
         Review from clients
       </Heading>
@@ -39,13 +39,17 @@ const Testimonials: FunctionComponent = () => {
           ".swiper-pagination-clickable span, .swiper-pagination-bullet span": {
             bg: "primary",
           },
+          ".swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction":
+            {
+              bottom: "0px",
+            },
         }}
       >
         <Swiper
           modules={[Pagination, Thumbs]}
           spaceBetween={40}
           slidesPerView={1}
-          pagination={{clickable: true}}
+          pagination={{ clickable: true }}
         >
           {testimonials.map(({ avatar, name, review }, index) => (
             <SwiperSlide key={index} className="testimonial">
@@ -60,7 +64,7 @@ const Testimonials: FunctionComponent = () => {
                 <Heading as="h5" size="sm" className="client__name">
                   {name}
                 </Heading>
-                <Box as="small" className="client__review" mb='6rem'>
+                <Box as="small" className="client__review" mb="6rem">
                   {review}
                 </Box>
               </Box>

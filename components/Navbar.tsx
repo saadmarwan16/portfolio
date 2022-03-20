@@ -34,8 +34,8 @@ const Navbar: FunctionComponent = () => {
           },
         },
         "a.active": {
-          bg: "background",
-          color: "white",
+          bg: "primary",
+          color: "background",
         },
       }}
     >

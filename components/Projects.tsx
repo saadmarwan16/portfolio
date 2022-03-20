@@ -1,4 +1,4 @@
-import { Box, Button, Heading } from "@chakra-ui/react";
+import { AspectRatio, Box, Button, Heading } from "@chakra-ui/react";
 import { FunctionComponent } from "react";
 import Image from "next/image";
 import { useMainWidth } from "../lib/hooks";
@@ -8,7 +8,7 @@ const Projects: FunctionComponent = () => {
   const mainWidth = useMainWidth();
 
   return (
-    <Box as="section" id="projects">
+    <Box as="section" id="projects" pt="7rem">
       <Heading as="h5" size="sm">
         My Recent Works
       </Heading>
@@ -41,8 +41,8 @@ const Projects: FunctionComponent = () => {
           ".portfolio__item-image": {
             borderRadius: "1.5rem",
             overflow: "hidden",
-            w: "6rem",
-            h: "6rem",
+            w: "full",
+            h: "full",
           },
           ".portfolio__item h3": {
             m: "1.2rem 0 2rem",
@@ -56,15 +56,15 @@ const Projects: FunctionComponent = () => {
       >
         {projects.map(({ image, title, github, demo }, index) => (
           <Box as="article" key={index} className="portfolio__item">
-            <Box className="portfolio__item-image">
-              <Image
-                src={image}
-                alt={title}
-                width={100}
-                height={100}
-                //   layout="fill"
-              />
-            </Box>
+            <AspectRatio ratio={2}>
+              <Box className="portfolio__item-image">
+                <Image
+                  src={image}
+                  alt={title}
+                    layout="fill"
+                />
+              </Box>
+            </AspectRatio>
             <Heading as="h3" size="md">
               {title}
             </Heading>

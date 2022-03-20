@@ -18,15 +18,15 @@ const Home: NextPage = () => {
         <title>Marwan</title>
       </Head>
       <Box>
-        {/* <Header />
+        <Header />
         <Navbar />
         <About />
         <Experience />
-        <Services /> */}
-        {/* <Projects /> */}
+        <Services />
+        <Projects />
         <Testimonials />
-        {/* <Contact />
-        <Footer /> */}
+        <Contact />
+        <Footer />
       </Box>
     </>
   );
