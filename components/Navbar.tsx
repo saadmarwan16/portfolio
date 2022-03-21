@@ -24,7 +24,7 @@ const Navbar: FunctionComponent = () => {
       sx={{
         a: {
           bg: "transparent",
-          padding: '0.5rem',
+          padding: "0.5rem",
           borderRadius: "50%",
           display: "flex",
           color: "light",
@@ -39,41 +39,36 @@ const Navbar: FunctionComponent = () => {
         },
       }}
     >
-      <a
-        href="#"
-        onClick={() => setActiveNavItem("#")}
-        className={activeNavItem === "#" ? "active" : ""}
-      >
-        <AiOutlineHome />
-      </a>
-      <a
-        href="#about"
-        onClick={() => setActiveNavItem("#about")}
-        className={activeNavItem === "#about" ? "active" : ""}
-      >
-        <AiOutlineUser />
-      </a>
-      <a
-        href="#experience"
-        onClick={() => setActiveNavItem("#experience")}
-        className={activeNavItem === "#experience" ? "active" : ""}
-      >
-        <BiBook />
-      </a>
-      <a
-        href="#services"
-        onClick={() => setActiveNavItem("#services")}
-        className={activeNavItem === "#services" ? "active" : ""}
-      >
-        <RiServiceLine />
-      </a>
-      <a
-        href="#contact"
-        onClick={() => setActiveNavItem("#contact")}
-        className={activeNavItem === "#contact" ? "active" : ""}
-      >
-        <BiMessageSquareDetail />
-      </a>
+        <a href="#"
+          onClick={() => setActiveNavItem("#")}
+          className={activeNavItem === "#" ? "active" : ""}
+        >
+          <AiOutlineHome />
+        </a>
+        <a href="#about"
+          onClick={() => setActiveNavItem("#about")}
+          className={activeNavItem === "#about" ? "active" : ""}
+        >
+          <AiOutlineUser />
+        </a>
+        <a href="#experience"
+          onClick={() => setActiveNavItem("#experience")}
+          className={activeNavItem === "#experience" ? "active" : ""}
+        >
+          <BiBook />
+        </a>
+        <a href="#services"
+          onClick={() => setActiveNavItem("#services")}
+          className={activeNavItem === "#services" ? "active" : ""}
+        >
+          <RiServiceLine />
+        </a>
+        <a href="#contact"
+          onClick={() => setActiveNavItem("#contact")}
+          className={activeNavItem === "#contact" ? "active" : ""}
+        >
+          <BiMessageSquareDetail />
+        </a>
     </HStack>
   );
 };

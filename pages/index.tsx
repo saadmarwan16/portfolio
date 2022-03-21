@@ -15,7 +15,16 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Marwan</title>
+        <title>Marwan Sa-ad | Portfolio</title>
+        <meta
+          name="description"
+          property="description"
+          content="Hi there, I am a full stack flutter mobile app and web app
+        developer. I have been building small and medium sized mobile and
+        web apps for over 3 years now. I can help you build your mobile or
+        web apps from a simple to-do list app to a whole e-commerce store."
+        />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box>
         <Header />

@@ -1,4 +1,5 @@
-import { Avatar, Box, List, ListItem } from "@chakra-ui/react";
+import { Box, List, ListItem } from "@chakra-ui/react";
+import Image from "next/image";
 import { FunctionComponent } from "react";
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 import { SiUpwork } from "react-icons/si";
@@ -18,8 +19,6 @@ const Footer: FunctionComponent = () => {
           color: "background",
         },
         ".footer__logo": {
-          fontSize: "2rem",
-          fontWeight: "500",
           mb: "2rem",
           display: "inline-block",
           _hover: {
@@ -61,13 +60,19 @@ const Footer: FunctionComponent = () => {
           mb: "4rem",
           color: "background",
         },
+        img: {
+          w: "6rem",
+          h: "6rem",
+          overflow: "hidden",
+          borderRadius: "50%",
+        },
       }}
     >
       <a href="#" className="footer__logo">
-        <Avatar src="/me-about.jpg" name="me" size="xl" />
+        <Image src="/me-about.jpg" alt="me" width={96} height={96} />
       </a>
 
-      <List className="permalinks">
+      <List className="permalinks" sx={{ a: { cursor: "pointer" } }}>
         <ListItem>
           <a href="#">Home</a>
         </ListItem>
@@ -81,7 +86,7 @@ const Footer: FunctionComponent = () => {
           <a href="#services">Services</a>
         </ListItem>
         <ListItem>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#projects">Portfolio</a>
         </ListItem>
         <ListItem>
           <a href="#testimonials">Testimonials</a>

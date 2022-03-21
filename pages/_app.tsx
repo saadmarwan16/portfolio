@@ -91,9 +91,6 @@ const styles = {
       color: "primary",
       mb: "3rem",
     },
-    // section: {
-    //   h: "100vh",
-    // },
     a: {
       color: "primary",
       transition: "all 400ms ease",

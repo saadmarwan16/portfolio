@@ -21,7 +21,7 @@ export const projects = [
 
 export const testimonials = [
   {
-    avatar: "/abdul-rahman.jpg",
+    avatar: "/abdul-rahman.jpeg",
     name: "Abdul Rahman Sa-ad",
     review:
       "Efficient service. Seamless process from start to finish. It is a distinct pleasure for me to recommend Sa-ad Marwan to any and all interested parties. He was very professional, comprehensive and competent throughout the process of our working together to build my Business Website. I feel that I have established a relationship with him for years to come. Would recommend 👍🏾",

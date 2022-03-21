@@ -119,11 +119,9 @@ const About: FunctionComponent = () => {
           >
             Hi there, I am a full stack flutter mobile app and web app
             developer. I have been building small and medium sized mobile and
-            web apps for over 3 years now. I can help you build your
-            mobile or web apps from a simple to-do list app to a whole
-            e-commerce store.
+            web apps for over 3 years now. I can help you build your mobile or
+            web apps from a simple to-do list app to a whole e-commerce store.
           </Box>
-
           <a href="#contact">
             <Button variant="primary">Let&apos;s talk</Button>
           </a>

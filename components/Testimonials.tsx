@@ -1,13 +1,12 @@
-import { Avatar, Box, Heading } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import { FunctionComponent } from "react";
 import { testimonials } from "../lib/data";
-import { Pagination, Navigation, Scrollbar, A11y, Thumbs } from "swiper";
+import { Pagination, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 import "swiper/css";
-// import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import "swiper/css/scrollbar";
 
 const Testimonials: FunctionComponent = () => {
   return (
@@ -36,6 +35,11 @@ const Testimonials: FunctionComponent = () => {
             width: { base: "90%", sm: "80%" },
             margin: "0.8rem auto 0",
           },
+          img: {
+            overflow: "hidden",
+            borderRadius: "50%",
+            m: "0 auto 1rem",
+          },
           ".swiper-pagination-clickable span, .swiper-pagination-bullet span": {
             bg: "primary",
           },
@@ -54,19 +58,14 @@ const Testimonials: FunctionComponent = () => {
           {testimonials.map(({ avatar, name, review }, index) => (
             <SwiperSlide key={index} className="testimonial">
               <Box className="client__avatar">
-                <Avatar
-                  src={avatar}
-                  name={name}
-                  w="4rem"
-                  h="4rem"
-                  m="0 auto 1rem"
-                />
-                <Heading as="h5" size="sm" className="client__name">
-                  {name}
-                </Heading>
-                <Box as="small" className="client__review" mb="6rem">
-                  {review}
-                </Box>
+                <Image src={avatar} alt={name} width={64} height={64} />
+              </Box>
+
+              <Heading as="h5" size="sm" className="client__name">
+                {name}
+              </Heading>
+              <Box as="small" className="client__review" mb="6rem">
+                {review}
               </Box>
             </SwiperSlide>
           ))}
