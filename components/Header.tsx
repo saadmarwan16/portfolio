@@ -15,13 +15,18 @@ const Header: FunctionComponent = () => {
       h={{ base: "100vh", md: "86vh", lg: "100vh" }}
       pt="7rem"
       overflow="hidden"
+      // h="full"
+      textAlign="center"
+      position="relative"
+      w={mainWidth}
+      marginX="auto"
     >
       <Box
-        textAlign="center"
-        position="relative"
-        h="full"
-        w={mainWidth}
-        marginX="auto"
+      // textAlign="center"
+      // position="relative"
+      // h="full"
+      // w={mainWidth}
+      // marginX="auto"
       >
         <VStack gap={{ base: 0, sm: 2 }}>
           <Heading as="h5" size="sm">

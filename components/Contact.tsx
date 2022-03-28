@@ -42,7 +42,7 @@ const Contact: FunctionComponent = () => {
       <Heading as="h5" size="sm">
         Get In Touch
       </Heading>
-      <Heading size="xl">Get In Touch</Heading>
+      <Heading size="xl">Contact Me</Heading>
 
       <Box
         className="container contact__container"
